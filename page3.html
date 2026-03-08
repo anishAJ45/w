@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Promises</title>
+
+<style>
+
+body{
+font-family: 'Arial', sans-serif;
+text-align:center;
+background: linear-gradient(135deg, #fff0f5, #ffb6c1);
+padding-top:100px;
+margin: 0;
+overflow: hidden;
+position: relative;
+min-height: 100vh;
+}
+
+body::before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><polygon points="50,10 60,40 90,40 68,58 78,88 50,70 22,88 32,58 10,40 40,40" fill="%23ff69b4" opacity="0.1"/></svg>') repeat;
+animation: float 30s infinite linear;
+}
+
+@keyframes float {
+0% { transform: translateY(0px); }
+100% { transform: translateY(-100px); }
+}
+
+h1{
+font-size: 48px;
+color: #ff1493;
+margin-bottom: 50px;
+text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+animation: fadeInDown 2s ease-out;
+}
+
+@keyframes fadeInDown {
+0% {
+opacity: 0;
+transform: translateY(-30px);
+}
+100% {
+opacity: 1;
+transform: translateY(0);
+}
+}
+
+ul {
+list-style: none;
+padding: 0;
+}
+
+li{
+font-size:20px;
+margin:20px auto;
+max-width: 600px;
+background: rgba(255, 255, 255, 0.8);
+padding: 15px 20px;
+border-radius: 10px;
+box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+color: #8b008b;
+animation: fadeInUp 1s ease-out both;
+animation-delay: calc(var(--i) * 0.5s);
+}
+
+li:nth-child(1) { --i: 1; }
+li:nth-child(2) { --i: 2; }
+li:nth-child(3) { --i: 3; }
+li:nth-child(4) { --i: 4; }
+li:nth-child(5) { --i: 5; }
+
+@keyframes fadeInUp {
+0% {
+opacity: 0;
+transform: translateY(30px);
+}
+100% {
+opacity: 1;
+transform: translateY(0);
+}
+}
+
+@media (max-width: 768px) {
+h1 {
+font-size: 36px;
+}
+li {
+font-size: 18px;
+max-width: 90%;
+}
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>My Promises To You 🌸</h1>
+
+<ul>
+<li>I promise to always support you.</li>
+<li>I promise to always respect you.</li>
+<li>I promise to stand with you in every situation.</li>
+<li>I promise to always be your best friend.</li>
+<li>I promise to always make you smile.</li>
+</ul>
+
+<a href="page4.html" style="display: block; text-align: center; margin-top: 50px; padding: 15px 30px; background: linear-gradient(45deg, #ff69b4, #ffb6c1); color: white; text-decoration: none; border-radius: 25px; transition: all 0.3s ease;">Final Page →</a>
+
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Message</title>
+
+<style>
+
+body {
+background: linear-gradient(135deg, #fff0f5, #ffb6c1);
+font-family: 'Arial', sans-serif;
+margin: 0;
+padding: 0;
+overflow: hidden;
+position: relative;
+}
+
+body::before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M50 10 C 60 10, 70 20, 70 30 C 70 40, 60 50, 50 50 C 40 50, 30 40, 30 30 C 30 20, 40 10, 50 10 Z" fill="%23ff69b4" opacity="0.1"/></svg>') repeat;
+animation: float 25s infinite linear;
+}
+
+@keyframes float {
+0% { transform: translateY(0px); }
+100% { transform: translateY(-100px); }
+}
+
+.container{
+display:flex;
+justify-content:center;
+align-items:center;
+height:auto;
+gap:40px;
+font-family:sans-serif;
+flex-direction: column;
+padding: 40px 20px;
+}
+
+img{
+width:350px;
+border-radius:15px;
+box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+animation: slideInLeft 2s ease-out;
+transition: transform 0.3s ease;
+}
+
+img:hover {
+transform: scale(1.05);
+}
+
+@keyframes slideInLeft {
+0% {
+opacity: 0;
+transform: translateX(-50px);
+}
+100% {
+opacity: 1;
+transform: translateX(0);
+}
+}
+
+.text{
+max-width: 90%;
+text-align: justify;
+animation: slideInRight 2s ease-out 0.5s both;
+}
+
+.text h2 {
+color: #ff1493;
+font-size: 36px;
+margin-bottom: 20px;
+text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+.text p {
+font-size: 18px;
+line-height: 1.6;
+color: #8b008b;
+margin: 10px 0;
+}
+
+a {
+display: inline-block;
+margin-top: 30px;
+padding: 12px 24px;
+background: linear-gradient(45deg, #ff69b4, #ffb6c1);
+color: white;
+text-decoration: none;
+border-radius: 25px;
+transition: all 0.3s ease;
+box-shadow: 0 4px 15px rgba(255,105,180,0.3);
+animation: fadeIn 2s ease-out 1.5s both;
+}
+
+a:hover {
+transform: scale(1.1);
+box-shadow: 0 6px 20px rgba(255,105,180,0.4);
+}
+
+@keyframes slideInRight {
+0% {
+opacity: 0;
+transform: translateX(50px);
+}
+100% {
+opacity: 1;
+transform: translateX(0);
+}
+}
+
+@keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+
+@media (max-width: 768px) {
+img {
+width: 280px;
+}
+.text {
+max-width: 90%;
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="text">
+<h2>Happy Women's Day</h2>
+
+<p>Happy Women’s Day my favvvv en Karthimaaa 🌸💖</p>
+
+<p>Nee na kitta pesina first day la irundhu ippo varaikum enaku romba periya support ah irukka. Nee en life la vanthathu nala tha en life la neraya vishayam change aachu. Un life la nee neraya struggles face panra — monthly monthly nee padra kashtam, society la nadakura vishayangal, veliya pogum pothu face panra problems… honestly hats off to you di 🙏✨</p>
+
+<p>Ippo society la nadakura vishayangal paatha, sila neram pasangala yarume namba maatanga nu thonum. Aana nee enna nambi un life la nadakura ellame en kitta share pannina… adhu enaku romba periya vishayam ❤️</p>
+
+<p>Un santhosathula naan illa na kuda paravala… aana un kashtathula kandipa naan irupen. Nee yedhavadhu kastam face pannina, nee thaniya illa nu eppovume nyabagam vechiko 🤝</p>
+
+<p>Innum oru vishayam enaku romba pudikum — nee un valiya velila kaamikama irupai. Aana aduthavangaluku prachana na nee than first poi avangaluku aarudhal solra. Adhu romba periya gunam di 🌟</p>
+
+<p>Ethanayo women ivlo kashtam thandi ippo success aagirkanga. Athu mariye neeum kandipa oru naal periya success aava nu enaku full confidence irukku. Andha naal varum pothu, unna pathi nenachu romba proud ah feel pannuvara naan than. "Ava en friend uh" nu nenjila thatti solluven 🥹✨</p>
+
+<p>Un appa amma unna nambi veliya college ku anupirukanga. Kandipa oru naal nee periya velaiku poi, un family ku financial ah support pannuvi nu enaku nambikkai irukku. Nee avangaluku romba periya perumai kudupa ❤️</p>
+
+<p>Thanks Karthimaaa… en amma ku apram ipdi oru ponnu pakka mudiyuma nu oru doubt irundhuchu. Aana nee vandhu adha maathi kaamichita.</p>
+
+<p>Once again, Happy Women’s Day di Karthimaaa 🌸💖</p>
+
+<a href="page3.html">Next →</a>
+
+</div>
+
+</div>
+
+</body>
+</html>
